@@ -22,7 +22,28 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 250ms;
 }
-
+.overlay{
+    position: relative;
+    overflow: hidden;
+}
+.paragraph-overlay{
+    display: flex;
+    background-color: #4D5AE5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 32px;
+    padding-top: 40px;
+    justify-content: center;
+    color: #F4F4FD;
+    transform: translateY(-100%);
+    transition-property: color, background-color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 250ms;
+}
 .portfolio-info{
     padding: 32px 16px;
     border-right: 1px solid #E7E9FC;
@@ -31,9 +52,12 @@
 }
 
 .portfolio-list-item:hover{
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+.portfolio-list-item:hover .paragraph-overlay{
+    transform: translateY(0);
+}
 .portfolio .content-header{
     font-size: 20px;
     letter-spacing: 0.02em;
