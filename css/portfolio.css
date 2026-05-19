@@ -17,10 +17,6 @@
 
 .portfolio-list-item{
     width: calc((100% - 48px) / 3);
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 250ms;
 }
 .overlay{
     position: relative;
@@ -34,12 +30,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 0 32px;
-    padding-top: 40px;
+    padding: 40px 32px;
     justify-content: center;
     color: #F4F4FD;
-    transform: translateY(-100%);
-    transition-property: color, background-color, transform;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transform: translateY(100%);
+    transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 250ms;
