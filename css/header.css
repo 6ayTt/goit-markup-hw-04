@@ -1,5 +1,5 @@
 .header{
-    border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .header-container{
@@ -17,10 +17,11 @@
 .list-nav-item{
     position: relative;
 }
-.header-link{
+.active-link{
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    color: #404bbf
 }
-.list-nav-link:active:after{
+.active-link:active::after:focus{
     content: "";
     height: 4px;
     width: 100%;
