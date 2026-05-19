@@ -17,6 +17,10 @@
 
 .portfolio-list-item{
     width: calc((100% - 48px) / 3);
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 250ms;
 }
 .overlay{
     position: relative;
@@ -37,7 +41,7 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     transform: translateY(100%);
-    transition-property: transform, box-shadow;
+    transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 250ms;
