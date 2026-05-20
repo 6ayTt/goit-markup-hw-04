@@ -19,7 +19,8 @@
     position: relative;
 }
 
-.active-link:focus::after{
+.active-link:focus::after,
+.active-link::after{
     content: "";
     height: 4px;
     width: 100%;
